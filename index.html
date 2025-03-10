@@ -12,26 +12,119 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
+    nav.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+    }
+
+    header h4 {
+      color: orange;
+      font-size: 1.5rem;
+    }
+
+    header span {
+      color: black;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    ul li {
+      margin-right: 20px;
+    }
+
+    ul li a {
+      color:black;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .icons {
+      display: flex;
+    }
+
+    .icons li {
+      margin-left: 15px;
+    }
+
+    .icons i {
+      color:black;
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+      }
+
+      ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .icons {
+        margin-top: 10px;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .icons li {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header h4 {
+        font-size: 1.2rem;
+      }
+
+      ul li a {
+        font-size: 0.9rem;
+      }
+
+      .icons i {
+        font-size: 1rem;
+      }
+    }
+</style>
 </head>
 <body>
-    <nav class="navbar">
-     
-            <header style="margin-left: 20px;">
-              <h4 style="color: orange;">APJ <span style="color:black"> Furniture</span></h4>
-            </header>
-            <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a>
-        </li>
+        <nav class="navbar">
+          <header>
+            <h4>APJ <span>Furniture</span></h4>
+          </header>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
           <div class="icons">
             <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-            <li class=""><a href="#"><i class="fa-brands fa-searchengin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-searchengin"></i></a></li>
           </div>
-        </ul>
-      </nav>
+        </nav>
 
         <div class="product-container">
             <div class="product">
